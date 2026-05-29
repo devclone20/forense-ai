@@ -1,0 +1,17 @@
+{
+  "project_name": "Forense AI",
+  "objective": "Plataforma multi-forense com IA para pesquisa em bases de dados forenses (web/internet), ingestão de evidências, análise com IA, geração de relatórios periciais e gestão de casos/processos",
+  "domains": ["digital", "medico-legal", "financeiro"],
+  "users": ["peritos_forenses", "forcas_seguranca", "magistratura", "advogados", "equipas_ciberseguranca"],
+  "core_features": [
+    "pesquisa_bases_dados_forenses_web",
+    "ingestao_evidencias",
+    "analise_ia",
+    "geracao_relatorios_periciais",
+    "gestao_casos_processos"
+  ],
+  "stack": "TBD",
+  "phase": "specification",
+  "initialized_at": "2026-05-29",
+  "constitution_version": "1.0"
+}

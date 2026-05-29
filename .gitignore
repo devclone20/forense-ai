@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Python (quando o backend for criado)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.env.*
+*.egg-info/
+dist/
+build/
+
+# Node (quando o frontend for criado)
+node_modules/
+.next/
+out/
+.env.local
+.env.*.local
+
+# Database
+*.sqlite
+*.db
+
+# Logs
+*.log
+
+# Secrets
+*.pem
+*.key
+secrets/
