@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* ── Design tokens — dark-first ─────────────────────────────────────────── */
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+
+  /* Surface scale */
+  --background: 0 0% 4%;         /* #0a0a0a */
+  --surface: 0 0% 6.7%;          /* #111111 */
+  --surface-raised: 0 0% 9%;     /* #171717 */
+  --surface-overlay: 0 0% 11%;   /* #1c1c1c */
+  --border: 0 0% 12.2%;          /* #1f1f1f */
+  --border-subtle: 0 0% 10%;     /* #1a1a1a */
+
+  /* Foreground */
+  --foreground: 0 0% 89.8%;      /* #e5e5e5 */
+  --muted: 0 0% 63.9%;           /* #a3a3a3 */
+  --muted-foreground: 0 0% 45%;  /* #737373 */
+
+  /* Accent */
+  --accent: 217.2 91.2% 59.8%;          /* #3b82f6 — blue */
+  --accent-foreground: 0 0% 100%;
+
+  /* Semantic */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+
+  /* Domain colours */
+  --domain-digital: 217.2 91.2% 59.8%;   /* blue */
+  --domain-medico: 142.1 76.2% 36.3%;    /* green */
+  --domain-financeiro: 38 92% 50%;        /* amber */
+
+  /* Status colours */
+  --status-aberto: 217.2 91.2% 59.8%;
+  --status-em-investigacao: 38 92% 50%;
+  --status-em-revisao: 262 83% 58%;
+  --status-fechado: 142.1 76.2% 36.3%;
+  --status-arquivado: 0 0% 45%;
+}
+
+/* ── Base reset ─────────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* ── Focus ──────────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid hsl(var(--accent));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
