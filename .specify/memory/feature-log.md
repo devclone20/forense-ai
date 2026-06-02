@@ -4,4 +4,5 @@
 
 | Feature | Status | Spec | Plan | Tasks | Data |
 |---|---|---|---|---|---|
-| Case Management | Approved ✓ | ✓ | ✓ | — | 2026-05-29 |
+| Case Management | Implemented ✓ | ✓ | ✓ | ✓ | 2026-05-29 |
+| Platform Foundation | Implemented ✓ | ✓ | ✓ | ✓ | 2026-06-02 |
