@@ -6,4 +6,4 @@
 |---|---|---|---|---|---|
 | Case Management | Implemented ✓ | ✓ | ✓ | ✓ | 2026-05-29 |
 | Platform Foundation | Implemented ✓ | ✓ | ✓ | ✓ | 2026-06-02 |
-| Evidence Ingestion | Approved ✓ | ✓ | ✓ | — | 2026-06-02 |
+| Evidence Ingestion | Implemented ✓ | ✓ | ✓ | ✓ | 2026-06-02 |
