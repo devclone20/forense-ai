@@ -23,7 +23,9 @@ CaseRoleEnum = Enum(
 AuditActionEnum = Enum(
     "case_created", "case_updated", "case_status_changed",
     "member_added", "member_removed",
+    "evidence_added",
     name="audit_action",
+    create_constraint=False,
 )
 
 

@@ -6,9 +6,11 @@ from app.api.v1 import (
     admin_users,
     auth,
     cases,
+    evidences,
     invites,
     members,
     recovery,
+    storage_config,
     transitions,
 )
 
@@ -26,3 +28,9 @@ router.include_router(cases.router)
 router.include_router(transitions.router)
 router.include_router(members.router)
 router.include_router(activity.router)
+
+# Evidence ingestion (RLS-protected)
+router.include_router(evidences.router)
+
+# Storage admin (admin-only, RLS-protected)
+router.include_router(storage_config.router)
