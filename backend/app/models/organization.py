@@ -24,6 +24,7 @@ class Organization(Base):
         server_default=text("now()"), nullable=False
     )
     is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    invite_expiry_days: Mapped[int] = mapped_column(Integer, nullable=False, server_default=text("7"))
 
     users: Mapped[list["User"]] = relationship(back_populates="organization")  # type: ignore[name-defined]
     cases: Mapped[list["Case"]] = relationship(back_populates="organization")  # type: ignore[name-defined]
