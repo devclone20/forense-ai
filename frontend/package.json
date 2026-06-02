@@ -21,7 +21,8 @@
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-badge": "^1.0.0",
     "@radix-ui/react-slot": "^1.0.2",
-    "class-variance-authority": "^0.7.0"
+    "class-variance-authority": "^0.7.0",
+    "react-dropzone": "^14.2.3"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
