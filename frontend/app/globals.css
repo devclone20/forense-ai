@@ -88,3 +88,24 @@ body {
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* ── Shared UI primitives (used by auth + account components) ───────────── */
+@layer components {
+  .input {
+    @apply w-full rounded-lg bg-[#0a0a0a] border border-[#1f1f1f] px-3.5 py-2.5
+           text-white text-sm placeholder:text-[#444]
+           focus:outline-none focus:ring-1 focus:ring-[#333] transition-colors;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2.5 rounded-lg text-sm font-medium bg-white text-black
+           hover:bg-[#f0f0f0] active:scale-[0.98] transition-all
+           disabled:bg-[#1f1f1f] disabled:text-[#555] disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2.5 rounded-lg text-sm font-medium border border-[#1f1f1f]
+           text-[#888] hover:text-white hover:border-[#333] transition-colors
+           disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+}
