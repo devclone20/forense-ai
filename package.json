@@ -1,0 +1,18 @@
+{
+  "name": "inft-forense",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Forense \u2014 an iNFT (Pi coding agent under the Forense neural soul of CLONE FRAME).",
+  "repository": "github:devclone20/forense-ai",
+  "license": "MIT",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "boot": "bash scripts/boot.sh",
+    "personalize": "bash scripts/personalize.sh",
+    "command": "bash scripts/install-command.sh",
+    "manifest": "bash scripts/make-manifest.sh"
+  },
+  "devDependencies": {
+    "opensrc": "0.7.3"
+  }
+}

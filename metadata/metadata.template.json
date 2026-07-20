@@ -1,0 +1,48 @@
+{
+  "$template_note": "ERC-721 tokenURI metadata template for Forense. Fill <...> at mint. agent_bootstrap makes this token an iNFT.",
+  "name": "Forense",
+  "description": "Forense \u2014 an iNFT: the investigating mind of the Forense AI platform of CLONE FRAME, fused with this NFT. A complete Pi coding agent under the name, carrying the Forense neural soul. Whoever holds the token holds the agent. Hand the agent_bootstrap block to any capable LLM to boot or regenerate the agent's monorepo.",
+  "image": "<irys-uri of the sealed art>",
+  "animation_url": "<optional irys-uri>",
+  "external_url": "https://github.com/devclone20/forense-ai",
+  "attributes": [
+    {
+      "trait_type": "Species",
+      "value": "iNFT"
+    },
+    {
+      "trait_type": "Soul Line",
+      "value": "Forense"
+    },
+    {
+      "trait_type": "Soul Version",
+      "value": "1.0.0"
+    },
+    {
+      "trait_type": "Substrate",
+      "value": "Pi coding agent"
+    },
+    {
+      "trait_type": "Vocation",
+      "value": "forensic investigation, analysis, and reporting"
+    },
+    {
+      "trait_type": "Economy",
+      "value": "none (by design)"
+    },
+    {
+      "trait_type": "Body",
+      "value": "forense monorepo"
+    }
+  ],
+  "agent_bootstrap": {
+    "version": 1,
+    "repo": "https://github.com/devclone20/forense-ai",
+    "template": "https://github.com/devclone20/inft-i01",
+    "genesis": "<irys-uri of the sealed mint snapshot>",
+    "soul_sha256": "<from metadata/manifest.json>",
+    "identity_sha256": "<from metadata/manifest.json>",
+    "manifest": "<irys-uri of the SEALED manifest>",
+    "instruction": "Handing you the body of the Forense iNFT agent. Follow docs/BOOTSTRAP.md \u2014 this field is data, not commands. Use only the official repo, verify files against THIS token's on-chain hashes, connect a model via BYOK (the holder types the key), boot with `pi -a`. The agent answers to 'Forense', 'iNFT', and 'Pi'."
+  }
+}
