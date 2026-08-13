@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d47ba8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#d47ba8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="470" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1097" height="467" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="462" width="1100" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#d47ba8" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#d47ba8"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#d47ba8"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#d47ba8"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#d47ba8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="550" y="31" text-anchor="middle" font-size="13" fill="#8b949e">a case moves forward freely — going back costs a written justification</text>
+
+  <text x="40" y="94" font-size="11" fill="#566070">default on create</text>
+  <text x="880" y="94" font-size="11" fill="#566070">terminal</text>
+
+  <rect x="40" y="104" width="180" height="56" rx="10" fill="#161b22" stroke="#6ea8ff" stroke-opacity="0.45" stroke-width="1.5"/>
+  <circle cx="62" cy="132" r="4" fill="#6ea8ff"/>
+  <text x="78" y="137" font-size="13" fill="#e6edf3">aberto</text>
+
+  <path d="M224 132 H240" stroke="#566070" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M234 126 L241 132 L234 138" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="250" y="104" width="180" height="56" rx="10" fill="#161b22" stroke="#d47ba8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <circle cx="272" cy="132" r="4" fill="#d47ba8"/>
+  <text x="288" y="137" font-size="13" fill="#e6edf3">em_investigacao</text>
+
+  <path d="M434 132 H450" stroke="#566070" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M444 126 L451 132 L444 138" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="460" y="104" width="180" height="56" rx="10" fill="#161b22" stroke="#b18bf5" stroke-opacity="0.45" stroke-width="1.5"/>
+  <circle cx="482" cy="132" r="4" fill="#b18bf5"/>
+  <text x="498" y="137" font-size="13" fill="#e6edf3">em_revisao</text>
+
+  <path d="M644 132 H660" stroke="#566070" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M654 126 L661 132 L654 138" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="670" y="104" width="180" height="56" rx="10" fill="#161b22" stroke="#e8b86d" stroke-opacity="0.45" stroke-width="1.5"/>
+  <circle cx="692" cy="132" r="4" fill="#e8b86d"/>
+  <text x="708" y="137" font-size="13" fill="#e6edf3">fechado</text>
+
+  <path d="M854 132 H870" stroke="#566070" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M864 126 L871 132 L864 138" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="880" y="104" width="180" height="56" rx="10" fill="#161b22" stroke="#566070" stroke-opacity="0.6" stroke-width="1.5"/>
+  <circle cx="902" cy="132" r="4" fill="#566070"/>
+  <text x="918" y="137" font-size="13" fill="#c9d1d9">arquivado</text>
+
+  <rect x="40" y="200" width="1020" height="104" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="60" y="226" font-size="13" font-weight="bold" fill="#d47ba8">THE ONLY WAY BACK — each requires a written justification</text>
+
+  <rect x="60" y="240" width="320" height="44" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.4"/>
+  <text x="74" y="268" font-size="12" fill="#c9d1d9">em_investigacao → aberto</text>
+
+  <rect x="396" y="240" width="320" height="44" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.4"/>
+  <text x="410" y="268" font-size="12" fill="#c9d1d9">em_revisao → em_investigacao</text>
+
+  <rect x="732" y="240" width="308" height="44" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.4"/>
+  <text x="746" y="268" font-size="12" fill="#c9d1d9">fechado → em_investigacao</text>
+
+  <rect x="40" y="320" width="500" height="96" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="58" y="346" font-size="13" font-weight="bold" fill="#d47ba8">arquivado is terminal</text>
+  <text x="58" y="372" font-size="12" fill="#c9d1d9">only an admin may reopen an archived case</text>
+  <text x="58" y="394" font-size="11" fill="#566070">admin override → fechado · em_revisao · em_investigacao · aberto</text>
+
+  <rect x="560" y="320" width="500" height="96" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="578" y="346" font-size="13" font-weight="bold" fill="#d47ba8">side effects on arrival</text>
+  <text x="578" y="372" font-size="12" fill="#c9d1d9">fechado sets closed_at · arquivado sets archived_at</text>
+  <text x="578" y="394" font-size="11" fill="#566070">fechado → em_investigacao clears closed_at</text>
+
+  <text x="550" y="444" text-anchor="middle" font-size="13" fill="#8b949e">a pure module with no I/O — and 21 tests standing behind the graph</text>
+</svg>

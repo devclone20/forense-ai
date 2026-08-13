@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 460" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d47ba8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#d47ba8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="460" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1097" height="457" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="452" width="1100" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#d47ba8" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#d47ba8"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#d47ba8"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#d47ba8"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#d47ba8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="550" y="31" text-anchor="middle" font-size="13" fill="#8b949e">what is in this repository, and which half of it is the agent</text>
+
+  <rect x="40" y="58" width="500" height="260" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="58" y="84" font-size="13.5" font-weight="bold" fill="#d47ba8">THE AGENT — Forense iNFT</text>
+
+  <text x="58" y="116" font-size="12" fill="#c9d1d9">identity.json</text>
+  <text x="254" y="116" font-size="11" fill="#566070">the names: Forense · iNFT · Pi</text>
+
+  <text x="58" y="146" font-size="12" fill="#c9d1d9">soul/neural_soul.md</text>
+  <text x="254" y="146" font-size="11" fill="#566070">four lobes, four iron laws</text>
+
+  <text x="58" y="176" font-size="12" fill="#c9d1d9">soul/lineage/</text>
+  <text x="254" y="176" font-size="11" fill="#566070">provenance — append, never edit</text>
+
+  <text x="58" y="206" font-size="12" fill="#c9d1d9">.pi/</text>
+  <text x="254" y="206" font-size="11" fill="#566070">Pi wiring + soul layer</text>
+
+  <text x="58" y="236" font-size="12" fill="#c9d1d9">scripts/</text>
+  <text x="254" y="236" font-size="11" fill="#566070">setup · boot · personalize</text>
+
+  <text x="58" y="266" font-size="12" fill="#c9d1d9">skills/cmux/</text>
+  <text x="254" y="266" font-size="11" fill="#566070">terminal skill, MIT</text>
+
+  <text x="58" y="296" font-size="12" fill="#c9d1d9">metadata/</text>
+  <text x="254" y="296" font-size="11" fill="#566070">ERC-721 template + sha256 map</text>
+
+  <rect x="560" y="58" width="500" height="260" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="578" y="84" font-size="13.5" font-weight="bold" fill="#d47ba8">THE APPLICATION — Forense AI</text>
+
+  <text x="578" y="116" font-size="12" fill="#c9d1d9">apps/backend/app/domain/</text>
+  <text x="820" y="116" font-size="11" fill="#566070">pure rules, zero I/O</text>
+
+  <text x="578" y="146" font-size="12" fill="#c9d1d9">apps/backend/app/repositories/</text>
+  <text x="820" y="146" font-size="11" fill="#566070">RLS-aware data access</text>
+
+  <text x="578" y="176" font-size="12" fill="#c9d1d9">apps/backend/app/services/</text>
+  <text x="820" y="176" font-size="11" fill="#566070">business logic + audit</text>
+
+  <text x="578" y="206" font-size="12" fill="#c9d1d9">apps/backend/app/storage/</text>
+  <text x="820" y="206" font-size="11" fill="#566070">local · s3 · r2 · wasabi · minio</text>
+
+  <text x="578" y="236" font-size="12" fill="#c9d1d9">apps/backend/app/api/v1/</text>
+  <text x="820" y="236" font-size="11" fill="#566070">thin HTTP adapters</text>
+
+  <text x="578" y="266" font-size="12" fill="#c9d1d9">apps/backend/alembic/versions/</text>
+  <text x="820" y="266" font-size="11" fill="#566070">18 migrations</text>
+
+  <text x="578" y="296" font-size="12" fill="#c9d1d9">apps/frontend/app/</text>
+  <text x="820" y="296" font-size="11" fill="#566070">Next.js 14 App Router</text>
+
+  <rect x="40" y="336" width="1020" height="76" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="60" y="362" font-size="13" font-weight="bold" fill="#d47ba8">.specify/ — the spec layer this repo is built under</text>
+  <text x="60" y="390" font-size="12" fill="#c9d1d9">memory/ constitution (9 articles) + feature log · specs/ case-management · platform-foundation · evidence-ingestion</text>
+
+  <text x="550" y="436" text-anchor="middle" font-size="13" fill="#8b949e">one repo, two layers — an agent with a soul, and the application it works inside</text>
+</svg>

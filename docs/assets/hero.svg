@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d47ba8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#d47ba8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="420" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1397" height="417" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="412" width="1400" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#d47ba8" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#d47ba8"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#d47ba8"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#d47ba8"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#d47ba8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="700" y="31" text-anchor="middle" font-size="13" fill="#8b949e">a case file, its evidence, and a chain of custody that only grows</text>
+
+  <text x="70" y="152" font-size="72" font-weight="bold" fill="#e6edf3">FORENSE<tspan fill="#d47ba8"> AI</tspan></text>
+
+  <text x="72" y="192" font-size="15" fill="#c9d1d9">Multi-domain forensic case management — digital, medico-legal, financial.</text>
+
+  <text x="72" y="232" font-size="13" fill="#8b949e">Evidence is hashed with SHA-256 in the same pass it is written to storage.</text>
+  <text x="72" y="256" font-size="13" fill="#8b949e">Every view, download, verification and export appends a row the app cannot edit.</text>
+
+  <rect x="1000" y="100" width="330" height="170" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="1020" y="128" font-size="11" fill="#566070">IDENTIFIERS</text>
+  <text x="1020" y="154" font-size="11" fill="#566070">case</text>
+  <text x="1020" y="178" font-size="15" fill="#e6edf3">FOR-{YYYY}-{NNNNN}</text>
+  <text x="1020" y="212" font-size="11" fill="#566070">evidence</text>
+  <text x="1020" y="236" font-size="15" fill="#e6edf3">EV-{NNN}</text>
+  <text x="1020" y="262" font-size="11" fill="#566070">atomic counters, per org and per case</text>
+
+  <rect x="70" y="300" width="180" height="30" rx="15" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+  <text x="160" y="320" text-anchor="middle" font-size="12" fill="#c9d1d9">Python 3.12 · FastAPI</text>
+
+  <rect x="264" y="300" width="168" height="30" rx="15" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+  <text x="348" y="320" text-anchor="middle" font-size="12" fill="#c9d1d9">PostgreSQL 16 + RLS</text>
+
+  <rect x="446" y="300" width="246" height="30" rx="15" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+  <text x="569" y="320" text-anchor="middle" font-size="12" fill="#c9d1d9">Next.js 14 · TypeScript strict</text>
+
+  <rect x="706" y="300" width="168" height="30" rx="15" fill="#161b22" stroke="#d47ba8" stroke-opacity="0.45" stroke-width="1.4"/>
+  <text x="790" y="320" text-anchor="middle" font-size="12" fill="#d47ba8">iNFT · Pi substrate</text>
+
+  <rect x="888" y="300" width="112" height="30" rx="15" fill="#161b22" stroke="#30363d" stroke-width="1.4"/>
+  <text x="944" y="320" text-anchor="middle" font-size="12" fill="#c9d1d9">licence MIT</text>
+
+  <text x="700" y="374" text-anchor="middle" font-size="13" fill="#8b949e">evidence over narrative — a finding that cannot be traced back is not a finding</text>
+</svg>

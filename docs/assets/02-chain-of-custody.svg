@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d47ba8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#d47ba8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="470" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1097" height="467" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="462" width="1100" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#d47ba8" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#d47ba8"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#d47ba8"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#d47ba8"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#d47ba8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="550" y="31" text-anchor="middle" font-size="13" fill="#8b949e">every hand the evidence passes through leaves a row nobody can take back</text>
+
+  <rect x="40" y="58" width="420" height="330" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="58" y="84" font-size="13.5" font-weight="bold" fill="#d47ba8">evidence_events — append-only</text>
+  <text x="58" y="106" font-size="11" fill="#566070">REVOKE UPDATE, DELETE at the database</text>
+
+  <circle cx="64" cy="136" r="3.5" fill="#6ea8ff"/>
+  <text x="80" y="140" font-size="12.5" fill="#e6edf3">ingested</text>
+  <text x="256" y="140" font-size="11" fill="#8b949e">written once, with its hash</text>
+
+  <circle cx="64" cy="174" r="3.5" fill="#8b949e"/>
+  <text x="80" y="178" font-size="12.5" fill="#e6edf3">viewed</text>
+  <text x="256" y="178" font-size="11" fill="#8b949e">who opened the record</text>
+
+  <circle cx="64" cy="212" r="3.5" fill="#8b949e"/>
+  <text x="80" y="216" font-size="12.5" fill="#e6edf3">downloaded</text>
+  <text x="256" y="216" font-size="11" fill="#8b949e">who took a copy</text>
+
+  <circle cx="64" cy="250" r="3.5" fill="#5ed3d8"/>
+  <text x="80" y="254" font-size="12.5" fill="#e6edf3">integrity_verified</text>
+  <text x="256" y="254" font-size="11" fill="#8b949e">re-read and compared</text>
+
+  <circle cx="64" cy="288" r="3.5" fill="#ff6b61"/>
+  <text x="80" y="292" font-size="12.5" fill="#e6edf3">integrity_alert</text>
+  <text x="256" y="292" font-size="11" fill="#8b949e">stored ✗ recomputed</text>
+
+  <circle cx="64" cy="326" r="3.5" fill="#b18bf5"/>
+  <text x="80" y="330" font-size="12.5" fill="#e6edf3">chain_exported</text>
+  <text x="256" y="330" font-size="11" fill="#8b949e">the ledger left the system</text>
+
+  <text x="58" y="364" font-size="11" fill="#566070">every row carries actor, ip and occurred_at</text>
+
+  <rect x="492" y="58" width="568" height="180" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="510" y="84" font-size="13.5" font-weight="bold" fill="#d47ba8">verify — re-read the object, re-hash it</text>
+
+  <text x="510" y="118" font-size="11" fill="#566070">stored</text>
+  <text x="620" y="118" font-size="12" fill="#c9d1d9">evidences.sha256_hash</text>
+  <text x="510" y="146" font-size="11" fill="#566070">recomputed</text>
+  <text x="620" y="146" font-size="12" fill="#c9d1d9">provider.compute_hash(ref)</text>
+
+  <rect x="510" y="166" width="250" height="40" rx="8" fill="#0d1117" stroke="#5ed3d8" stroke-opacity="0.4" stroke-width="1.4"/>
+  <text x="524" y="191" font-size="12" fill="#5ed3d8">match → integrity_verified</text>
+
+  <rect x="780" y="166" width="262" height="40" rx="8" fill="#0d1117" stroke="#ff6b61" stroke-opacity="0.4" stroke-width="1.4"/>
+  <text x="794" y="191" font-size="12" fill="#ff6b61">mismatch → integrity_alert</text>
+
+  <text x="510" y="226" font-size="11" fill="#566070">both outcomes append a row — the alert is never silent</text>
+
+  <rect x="492" y="254" width="568" height="134" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="510" y="280" font-size="13.5" font-weight="bold" fill="#d47ba8">export — the whole chain, signed</text>
+  <text x="510" y="306" font-size="12" fill="#c9d1d9">GET /cases/{case_id}/evidences/chain-of-custody</text>
+  <text x="510" y="328" font-size="12" fill="#c9d1d9">CSV of every event, oldest first</text>
+  <text x="510" y="350" font-size="12" fill="#c9d1d9">HMAC-SHA256 keyed by AUDIT_HMAC_KEY</text>
+  <text x="510" y="372" font-size="11" fill="#566070">the export itself appends chain_exported</text>
+
+  <text x="550" y="436" text-anchor="middle" font-size="13" fill="#8b949e">the ledger only grows — a correction is another row, never an edit</text>
+</svg>

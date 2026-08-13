@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">
+  <defs>
+    <linearGradient id="accentline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d47ba8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#d47ba8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="480" rx="14" fill="#0d1117"/>
+  <rect x="1.5" y="1.5" width="1097" height="477" rx="13" fill="none" stroke="#30363d" stroke-width="3"/>
+  <rect x="0" y="472" width="1100" height="4" fill="url(#accentline)" opacity="0.9"/>
+
+  <circle cx="28" cy="26" r="6" fill="#ff5f57"/>
+  <circle cx="50" cy="26" r="6" fill="#febc2e"/>
+  <circle cx="72" cy="26" r="6" fill="#28c840"/>
+
+  <g stroke="#d47ba8" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <rect x="101" y="15.5" width="20" height="17" rx="6"/>
+    <line x1="111" y1="15.5" x2="111" y2="11.5"/>
+  </g>
+  <circle cx="111" cy="10" r="1.6" fill="#d47ba8"/>
+  <circle cx="106.8" cy="22" r="1.7" fill="#d47ba8"/>
+  <circle cx="115.2" cy="22" r="1.7" fill="#d47ba8"/>
+  <path d="M107 27 Q111 30 115 27" stroke="#d47ba8" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <text x="550" y="31" text-anchor="middle" font-size="13" fill="#8b949e">the tenant boundary is one session variable — and the database keeps it</text>
+
+  <rect x="40" y="58" width="300" height="240" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="58" y="84" font-size="13" font-weight="bold" fill="#d47ba8">EVERY REQUEST</text>
+  <text x="58" y="114" font-size="12" fill="#c9d1d9">Authorization: Bearer &lt;jwt&gt;</text>
+  <text x="58" y="140" font-size="12" fill="#c9d1d9">HS256 · 15-minute access token</text>
+  <text x="58" y="166" font-size="12" fill="#c9d1d9">claims → user_id, org_id, role</text>
+  <text x="58" y="192" font-size="12" fill="#c9d1d9">TOTP MFA, secret encrypted</text>
+  <text x="58" y="218" font-size="12" fill="#c9d1d9">argon2 password hashing</text>
+  <text x="58" y="244" font-size="12" fill="#c9d1d9">5 requests/min per IP on auth</text>
+  <text x="58" y="272" font-size="11" fill="#566070">refresh tokens rotate the session</text>
+
+  <path d="M344 178 H364" stroke="#566070" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M358 172 L365 178 L358 184" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="372" y="58" width="340" height="240" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="390" y="84" font-size="13" font-weight="bold" fill="#d47ba8">THE GATE — one line, every session</text>
+
+  <rect x="390" y="104" width="304" height="92" rx="8" fill="#0d1117" stroke="#d47ba8" stroke-opacity="0.35" stroke-width="1.4"/>
+  <text x="404" y="132" font-size="12" fill="#d47ba8">SELECT set_config(</text>
+  <text x="404" y="154" font-size="12" fill="#c9d1d9">  'app.current_org_id',</text>
+  <text x="404" y="176" font-size="12" fill="#c9d1d9">  str(org_id), true)</text>
+
+  <text x="390" y="222" font-size="12" fill="#c9d1d9">org_id comes from the JWT</text>
+  <text x="390" y="246" font-size="12" fill="#c9d1d9">set before every query runs</text>
+  <text x="390" y="274" font-size="11" fill="#566070">app/middleware/tenant.py</text>
+
+  <path d="M716 178 H736" stroke="#566070" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M730 172 L737 178 L730 184" fill="none" stroke="#566070" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="744" y="58" width="316" height="240" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="762" y="84" font-size="13" font-weight="bold" fill="#d47ba8">ROW LEVEL SECURITY ON</text>
+  <text x="762" y="110" font-size="11.5" fill="#c9d1d9">organizations</text>
+  <text x="762" y="127" font-size="11.5" fill="#c9d1d9">users</text>
+  <text x="762" y="144" font-size="11.5" fill="#c9d1d9">cases</text>
+  <text x="762" y="161" font-size="11.5" fill="#c9d1d9">case_members</text>
+  <text x="762" y="178" font-size="11.5" fill="#c9d1d9">case_state_transitions</text>
+  <text x="762" y="195" font-size="11.5" fill="#c9d1d9">case_number_sequences</text>
+  <text x="762" y="212" font-size="11.5" fill="#c9d1d9">audit_log</text>
+  <text x="762" y="229" font-size="11.5" fill="#c9d1d9">invitations</text>
+  <text x="762" y="246" font-size="11.5" fill="#c9d1d9">storage_configs</text>
+  <text x="762" y="263" font-size="11.5" fill="#c9d1d9">evidences</text>
+  <text x="762" y="286" font-size="11" fill="#566070">org isolation, enforced by Postgres</text>
+
+  <rect x="40" y="316" width="1020" height="110" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+  <text x="60" y="342" font-size="13" font-weight="bold" fill="#d47ba8">APPEND-ONLY IS A DATABASE PRIVILEGE, NOT AN APP CONVENTION</text>
+
+  <rect x="60" y="356" width="320" height="54" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.4"/>
+  <text x="74" y="380" font-size="12.5" fill="#e6edf3">audit_log</text>
+  <text x="74" y="398" font-size="11" fill="#566070">REVOKE UPDATE, DELETE + trigger</text>
+
+  <rect x="396" y="356" width="320" height="54" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.4"/>
+  <text x="410" y="380" font-size="12.5" fill="#e6edf3">auth_log</text>
+  <text x="410" y="398" font-size="11" fill="#566070">REVOKE + trigger, migration 012</text>
+
+  <rect x="732" y="356" width="308" height="54" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1.4"/>
+  <text x="746" y="380" font-size="12.5" fill="#e6edf3">evidence_events</text>
+  <text x="746" y="398" font-size="11" fill="#566070">REVOKE UPDATE, DELETE (016)</text>
+
+  <text x="550" y="452" text-anchor="middle" font-size="13" fill="#8b949e">isolation is a policy, immutability is a privilege — neither lives in the app</text>
+</svg>
